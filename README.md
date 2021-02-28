@@ -1,8 +1,7 @@
 # PasswdGen
 
-Password generator. Create a random string from sets of characters in particular length. Copy to clipboard. No 
-storage. No
-cookies.
+SPA Password generator. Create a random string from sets of characters in particular length. Copy to clipboard. No 
+storage. No cookies.
 
 -----
 
