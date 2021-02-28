@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input, ElementRef} from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Clipboard } from '@angular/cdk/clipboard';
 import {
@@ -56,10 +56,13 @@ export class AppComponent implements OnInit{
 
   constructor(
     private formBuilder: FormBuilder,
-    private clipboard: Clipboard
+    private clipboard: Clipboard,
+    private _elementRef: ElementRef
   ) { }
 
   ngOnInit() {
+    this._elementRef.nativeElement.removeAttribute("ng-version");
+
     this.form = this.formBuilder.group({
       strLength: new FormControl(16),
       allCapsAlphaChecked: new FormControl(true),
@@ -69,7 +72,7 @@ export class AppComponent implements OnInit{
     });
   }
 
-  generateRandomString() {
+  generateRandomString(): void {
     const formValue = this.form.value;
 
     let str = '';
@@ -108,7 +111,7 @@ export class AppComponent implements OnInit{
     this.resultDatetime = dateTime;
   }
 
-  copyResultString() {
+  copyResultString(): void {
     console.log(this.resultString.value);
     this.clipboard.copy(this.resultString.value);
 
