@@ -1,5 +1,11 @@
 # PasswdGen
 
+Password generator. Create a random string from sets of characters in particular length. Copy to clipboard. No 
+storage. No
+cookies.
+
+-----
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
 
 ## Development server
