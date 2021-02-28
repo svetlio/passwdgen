@@ -1,8 +1,12 @@
 # PasswdGen
 
-SPA Password generator. Create a random string from sets of characters in particular length. Copy to clipboard. No 
-storage. No cookies.  
-PWA, works as desktop app.
+SPA Password generator. 
+Create a random string from sets of characters in particular length.  
+Copy to clipboard.  
+No storage. No cookies.  
+Built on Angular and Materials.  
+PWA, works as desktop app.  
+[Live demo](http://passwd-gen.d-support.eu/)
 
 -----
 
